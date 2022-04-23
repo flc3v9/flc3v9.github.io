@@ -1,1 +1,15 @@
 /* this is the CSS file for my final project */
+
+/* code style */
+#code {
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#external-link {
+    color: #746ab0;
+}
