@@ -1,54 +1,81 @@
+<!DOCTYPE html>
+
 <!--Turtle Graphics-->
-<!-- Will need: paragraphs, headers, links between pages, links to external websites, one or more images hosted on GitHub, Images hosted elsewhere, a list, a table, colored backgrounds, bolded, italicized, and colored text, block of code, use CSS to style html pages (try to use external CSS)-->
+<!-- Will need: a table, colored backgrounds, colored text-->
 
-# Intro to Turtle Graphics
-Return to [Home Page](README.md)  
-Other pages: [Python](pythonbeginnings.md) | [HTML](HTMLbeginnings.md) | [JavaScript](JavaScript.md)  
+<html>
+    <head>
+        <meta content="width=device-width, inital-scale=1">
+        <title>Intro To Turtle Graphics</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <h1>Intro to Turtle Graphics</h1>
+        <p id="external-link">
+			Return to <a href="index.html">Home</a>
+            <br>Other pages: <a href="PythonIntro.html">Python</a> | <a href="HTMLintro.html">HTML</a> | <a href="JavaScript.html">JavaScript</a>
+		</p>
 
-[Turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics) are a form of **vector graphics** that were often used to [introduce programming to children](https://docs.python.org/3/library/turtle.html). For this challenge in _INFOTEC 1000_, we were instructed to create images by using Python to program the Turtle graphics. For more about my usage of Python, check [here](pythonbeginnings.md).
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Turtle_graphics">Turtle graphics</a> are a form of **vector graphics** that were often used to <a href="https://docs.python.org/3/library/turtle.html">introduce programming to children</a>. For this challenge in <i>INFOTEC 1000</i>, we were instructed to create images by using Python to program the Turtle graphics. For more about my usage of Python, check <a href="PythonIntro.html">here</a>.
+        </p>
 
-Here is a common type of graphic created using Turtle graphics:  
-![Old web example of Turtle Graphics](https://upload.wikimedia.org/wikipedia/commons/7/73/Circle_pattern.png)
+        <p>
+            Here is a common type of graphic created using Turtle graphics:
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Circle_pattern.png" alt="old web example of turtle graphics">
+        </p>
 
-For this challenge, Turtle graphics were used in order to teach us:
-* how Python can be used for varying functions  
-* be able to use code to create an image
-* understand the usage of Turtle graphics
+        <p>
+            For this challenge, Turtle graphics were used in order to teach us:
+            <ul id="lists">
+                <li>how Python can be used for varying functions</li>
+                <li>how to use code to create an image</li>
+                <li>understand the usage of Turtle graphics</li>
+            </ul>
+        </p>
 
-The code I used is shown below:  
-```
-import turtle
+        <p>
+            The code I used is shown below:
+            <pre id="code">
+                <code>
+                    import turtle
 
-flower = turtle.Turtle()
+                    flower = turtle.Turtle()
 
-ANIMATION_SPEED = 10
+                    ANIMATION_SPEED = 10
 
-#main red flower
-flower.pencolor("#DC1C13")
+                    #main red flower
+                    flower.pencolor("#DC1C13")
 
-for i in range(25):
-    flower.forward(i * 15)
-    flower.right(130)
+                    for i in range(25):
+                        flower.forward(i * 15)
+                        flower.right(130)
 
-#medium pink flower
-flower.pencolor("#F07470")
+                    #medium pink flower
+                    flower.pencolor("#F07470")
 
-for i in range(20):
-    flower.backward(i * 15)
-    flower.left(130)
-    
-# smaller pink flower
-flower.pencolor("#F6BDC0")
+                    for i in range(20):
+                        flower.backward(i * 15)
+                        flower.left(130)
+                        
+                    # smaller pink flower
+                    flower.pencolor("#F6BDC0")
 
-for i in range(15):
-    flower.forward(i*15)
-    flower.right(130)
+                    for i in range(15):
+                        flower.forward(i*15)
+                        flower.right(130)
 
-turtle.speed(ANIMATION_SPEED)
+                    turtle.speed(ANIMATION_SPEED)
 
-turtle.done()
-```
+                    turtle.done()
+                </code>
+            </pre>
+        </p>
 
-The output of this code results in this image:
-![Turtle graphics my example](TurtleGraphics.png)  
-This concludes my introduction to Turtle graphics. Thank you for reading!
+        <p>
+            The output of this code results in this image:
+            <img src="TurtleGraphics.png" alt="Turtle graphics my example">
+            <br>This concludes my introduction to Turtle graphics. Thank you for reading!
+        </p>
+    </body>
+</html>

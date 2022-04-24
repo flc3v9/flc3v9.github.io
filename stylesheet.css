@@ -2,7 +2,6 @@
 
 /* code style */
 #code {
-    text-align: center;
     background-color: cornflowerblue;
 }
 
@@ -12,4 +11,8 @@
 
 #external-link {
     color: #746ab0;
+}
+
+#lists {
+    color: royalblue;
 }

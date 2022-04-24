@@ -1,63 +1,88 @@
-<!--JavaScript-->
-<!-- Will need: paragraphs, headers, links between pages, links to external websites, one or more images hosted on GitHub, Images hosted elsewhere, a list, a table, colored backgrounds, bolded, italicized, and colored text, block of code, use CSS to style html pages (try to use external CSS)-->
-
-# JavaScript Beginnings
-Return to [Home Page](README.md)  
-Other pages: [Python](pythonbeginnings.md) | [HTML](HTMLbeginnings.md) | [Turtle Graphics](TurtleGraphics.md)
-
-For this assignment of _INFOTEC 1000_, we were expected to learn **JavaScript** and brush up on **HTML**. If you want to read more about my intro to HTML, check [here](HTMLbeginnings.md). [JavaScript](https://en.wikipedia.org/wiki/JavaScript) is a languages that is often used in conjunction to HTML and CSS for webpage design.
-
-The JavaScript logo is shown below:  
-
-![JavaScript Logo](https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg)
-
-For this challenge, I was expected to write a program based off of the **FizzBuzz** game. This happens to be a challenge used for interviewing programmer job applicants. In this case, I was expected to write this program in order to:  
-* understand the basics of **JavaScript** and its interaction with **HTML**  
-* show our programming proficientcy  
-* be able understand how to use a plain text editor  
-
-The code is shown below:  
-```
 <!DOCTYPE html>
+
+<!--JavaScript-->
+<!-- Will need: a table, colored backgrounds, colored text-->
+
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Fizz Buzz</title>
-<script>
+	<head>
+		<meta content="width=device-width, inital-scale=1">
+        <title>Intro To JavaScript</title>
+        <link rel="stylesheet" href="stylesheet.css">
+	</head>
+	<body>
+		<h1>Intro to JavaScript</h1>
+		<p id="external-link">
+			Return to <a href="index.html">Home</a>
+            <br>Other pages: <a href="PythonIntro.html">Python</a> | <a href="HTMLintro.html">HTML</a> | <a href="TurtleGraphics.html">Turtle Graphics</a>
+		</p>
 
-function fizzbuzz() {
-	var display = document.getElementById('display');
-	var displayHTML = "";
-	for (i = 1; i < 101; i++) {
-		if (i % 15 === 0) {
-			document.write("FizzBuzz" + "<br>");
-		} else if (i % 3 === 0) {
-			document.write("Fizz" + "<br>");
-		} else if (i % 5 === 0) {
-			document.write("Buzz" + "<br>");
-		} else {
-			document.write(i + "<br>");
-		}
-		displayHTML += "<p>" + i + "</p>";
-	}
-	display.innerHTML = displayHTML
-}
+		<p>
+			For this assignment of <i>INFOTEC 1000</i>, we were expected to learn **JavaScript** and brush up on <strong>HTML</strong>. If you want to read more about my intro to HTML, check <a href="HTMLintro.html">HTML Beginnings</a>. <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> is a languages that is often used in conjunction to HTML and CSS for webpage design.
+		</p>
 
-</script>
+		<p>
+			The JavaScript logo is shown below:
+			<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo">
+		</p>
 
-</head>
+		<p>
+			For this challenge, I was expected to write a program based off of the **FizzBuzz** game. This happens to be a challenge used for interviewing programmer job applicants. In this case, I was expected to write this program in order to:
+			<ul id="lists">
+				<li>understand the basics of <strong>JavaScript</strong> and its interaction with <strong>HTML</strong></li>
+				<li>show our programming proficientcy</li>
+				<li>be able to understand how to use a plain text editor</li>
+			</ul>
+		</p>
 
-<body onload="fizzbuzz()">
-<div id="display">
+		<p>
+			The code is shown below:
+			<pre id="code">
+				<code>
+					&lt;!DOCTYPE html&gt;
+					&lt;html&gt;
+					&lt;head&gt;
+					&lt;meta charset="UTF-8"&gt;
+					&lt;title&gt;Fizz Buzz&lt;/title&gt;
+					&lt;script&gt;
 
-</div>
-</body>
+					function fizzbuzz() {
+						var display = document.getElementById('display');
+						var displayHTML = "";
+						for (i = 1; i &lt; 101; i++) {
+							if (i % 15 === 0) {
+								document.write("FizzBuzz" + "&lt;br&gt;");
+							} else if (i % 3 === 0) {
+								document.write("Fizz" + "&lt;br&gt;");
+							} else if (i % 5 === 0) {
+								document.write("Buzz" + "&lt;br&gt;");
+							} else {
+								document.write(i + "&lt;br&gt;");
+							}
+							displayHTML += "&lt;p&gt;" + i + "&lt;/p&gt;";
+						}
+						display.innerHTML = displayHTML
+					}
 
+					&lt;/script&gt;
+
+					&lt;/head&gt;
+
+					&lt;body onload="fizzbuzz()"&gt;
+					&lt;div id="display"&gt;
+
+					&lt;/div&gt;
+					&lt;/body&gt;
+
+					&lt;/html&gt;
+				</code>
+			</pre>
+		</p>
+
+		<p>
+			The expected output looks like this:
+			<img src="FizzBuzzOutput.png" alt="FizzBuzz Challenge">
+			<i>(Note: the rest of the numbers are cut off due to the size of the file in the browser.)</i>
+			<br>This concludes my introduction to Javascript. Thank you for reading!
+		</p>
+	</body>
 </html>
-```
-
-The expected output looks like this:
-![FizzBuzz Challenge](FizzBuzzOutput.png)  
-_(Note: the rest of the numbers are cut off due to the size of the file in the browser.)_  
-
-This concludes my introduction to Javascript. Thank you for reading!

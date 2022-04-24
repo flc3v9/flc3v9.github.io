@@ -8,9 +8,9 @@
     </head>
     <body>
         <h1>Intro to Python</h1>
-        <p>
+        <p id="external-link">
             Return to <a href="index.html">Home</a>
-            <br>Other pages: <a href="HTMLintro.html">HTML</a> | <a href="TurtleGraphics.html">Turtle Graphics</a> | <a href="JavaScript.html">JavaScript</a> 
+            <br>Other pages: <a href="HTMLintro.html">HTML</a> | <a href="TurtleGraphics.html">Turtle Graphics</a> | <a href="JavaScript.html">JavaScript</a>
         </p>
         
         <p>
@@ -24,7 +24,7 @@
 
         <p>Back to what I was saying, this code is supposed to calculate the volume of a cone. The project is supposed to teach us:
             <br>
-                <ul>
+                <ul id="lists">
                     <li>the basics of Python</li>
                     <li>how to use Python ot solve math problems</li>
                     <li>how to use <i>while loops</i> in Python</li>
@@ -35,44 +35,46 @@
 
         <p>
             The code I wrote is shown below:
-            <pre>
-                import math
+            <pre id="code">
+                <code>
+                    import math
 
-                def main():
-                    # radius input
-                    while True:
-                        try:
-                            radius = float(input("Please type in the radius of a cone: "))
-                        except ValueError:
-                            print("Please enter only a numerical value for the radius.")
-                            continue
-                        if (radius <= 0):
-                            print("Please enter a positive value for the radius.")
-                            continue
-                        else:
-                            break
+                    def main():
+                        # radius input
+                        while True:
+                            try:
+                                radius = float(input("Please type in the radius of a cone: "))
+                            except ValueError:
+                                print("Please enter only a numerical value for the radius.")
+                                continue
+                            if (radius &lt;= 0):
+                                print("Please enter a positive value for the radius.")
+                                continue
+                            else:
+                                break
 
-                    print("\n")
-                    # height input
-                    while True:
-                        try:
-                            height = float(input("Please type in the height of a cone: "))
-                        except ValueError:
-                            print("Please enter only a numerical value for the height.")
-                            continue
-                        if (height <= 0):
-                            print("Please enter a positive value for the height.")
-                            continue
-                        else:
-                            break
+                        print("\n")
+                        # height input
+                        while True:
+                            try:
+                                height = float(input("Please type in the height of a cone: "))
+                            except ValueError:
+                                print("Please enter only a numerical value for the height.")
+                                continue
+                            if (height &lt;= 0):
+                                print("Please enter a positive value for the height.")
+                                continue
+                            else:
+                                break
 
-                    print("\n")
-                    # main calculation
-                    volume = math.pi * (radius**2) * (height/3)
-                    print("The volume of this cone is: ", end="")
-                    print(volume)
+                        print("\n")
+                        # main calculation
+                        volume = math.pi * (radius**2) * (height/3)
+                        print("The volume of this cone is: ", end="")
+                        print(volume)
 
-                main()
+                    main()
+                </code>
             </pre>
 
         </p>
@@ -80,7 +82,7 @@
         <p>
             The output of the code would result in this:
             <img src="Cone_image.png" alt="cone image">
-            This sums up my introduction to the Python experience. Thank you for reading!
+            <br>This sums up my introduction to the Python experience. Thank you for reading!
         </p>
     </body>
 </html>

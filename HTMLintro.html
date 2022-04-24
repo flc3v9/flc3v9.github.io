@@ -1,38 +1,66 @@
+<!DOCTYPE html>
+
 <!--Intro to HTML-->
-# Intro to HTML  
-Return to [Home Page](README.md)  
-Other pages: [Python](pythonbeginnings.md) | [Turtle Graphics](TurtleGraphics.md) | [JavaScript](JavaScript.md)
+<!-- Will need: a table, colored backgrounds, colored text-->
 
-A few weeks into the _INFOTEC 1000_ course, we also learned how to code a bit of [HyperText Markup Language (HTML)](https://en.wikipedia.org/wiki/HTML) in order to imbed a [Scalable Vector Graphics (SVG)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics). HTML is a markup language that is used to be displayed on the web. We learned parts of HTML because a SVG must be embedded into the HTML to work.
-
-The HTML logo is shown below:  
-
-![HTML Logo](https://upload.wikimedia.org/wikipedia/commons/8/80/HTML5_logo_resized.svg)
-
-This section of the course was meant to introduce us to concept of SVGs and the interworkings of webpages. SVGs are commonly used because they are:  
-* vector based  
-* easy to use with various languages (**W3C standard**)  
-* can be used for various designs  
-
-Some example code for a rectangle is shown here:  
-```
 <html>
-<body>
-<h1 style="text-align:center;font-size:350%;font-family:optima;color:#25523B;">This is my first SVG.</h1>
+	<head>
+		<meta content="width=device-width, inital-scale=1">
+        <title>Intro To HTML</title>
+        <link rel="stylesheet" href="stylesheet.css">
+	</head>
+	<body>
+		<h1>
+			Intro to HTML
+		</h1>
+		<p id="external-link">
+			Return to <a href="index.html">Home</a>
+            <br>Other pages: <a href="PythonIntro.html">Python</a> | <a href="JavaScript.html">JavaScript</a> | <a href="TurtleGraphics.html">Turtle Graphics</a>
+		</p>
 
-<svg width="800" height="400">
-	<rect x="300" y="10" rx="15" ry=:15" width="400" height="300" style="fill:yellow;stroke:lightblue;stroke-width:10;fill-opacity:0.5;strokeopacity:0.5" />
-</svg>
+		<p>
+			A few weeks into the <i>INFOTEC 1000</i> course, we also learned how to code a bit of <a href="https://en.wikipedia.org/wiki/HTML">HyperText Markup Language (HTML)</a> in order to imbed a <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">Scalable Vector Graphics (SVG)</a>. HTML is a markup language that is used to be displayed on the web. We learned parts of HTML because a SVG must be embedded into the HTML to work.
+		</p>
 
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.83 146.39"><defs><style>.cls-1{fill:#fff;stroke:#231f20;stroke-miterlimit:10;stroke-width:7px;}</style></defs><polygon class="cls-1" points="52.1 103.19 6.8 103.19 75.97 6.38 162.21 142.89 36.04 142.89 122.96 6.38 188.25 103.19 52.1 103.19"/></svg>
-</svg>
+		<p>
+			The HTML logo is shown below:
+			<img src="https://upload.wikimedia.org/wikipedia/commons/8/80/HTML5_logo_resized.svg" alt="HTML logo">
+		</p>
+		
+		<p>
+			This section of the course was meant to introduce us to concept of SVGs and the interworkings of webpages. SVGs are commonly used because they are: 
+			<ul id="lists">
+				<li>vector based</li>
+				<li>easy to use with various languages <strong>W3C standard</strong></li>
+				<li>can be used for various designs</li>
+			</ul>
+		</p>
+		
+		<p>
+			Some example code is shown below:
+			<pre id="code">
+				<code>
+					&lt;html&gt;
+						&lt;body&gt;
+							&lt;h1 style="text-align:center;font-size:350%;font-family:optima;color:#25523B;"&gt;This is my first SVG.&lt;/h1&gt;
 
-</body>
+							&lt;svg width="800" height="400"&gt;
+								&lt;rect x="300" y="10" rx="15" ry=:15" width="400" height="300" style="fill:yellow;stroke:lightblue;stroke-width:10;fill-opacity:0.5;strokeopacity:0.5" /&gt;
+							&lt;/svg&gt;
+
+							&lt;svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.83 146.39"&gt;&lt;defs&gt;&lt;style&gt;.cls-1{fill:#fff;stroke:#231f20;stroke-miterlimit:10;stroke-width:7px;}&lt;/style&gt;&lt;/defs&gt;&lt;polygon class="cls-1" points="52.1 103.19 6.8 103.19 75.97 6.38 162.21 142.89 36.04 142.89 122.96 6.38 188.25 103.19 52.1 103.19"/&gt;&lt;/svg&gt;
+							&lt;/svg&gt;
+						&lt;/body&gt;
+					&lt;/html&gt;
+				</code>
+			</pre>
+		</p>
+
+		<p>
+			The output of the full code looks like this in a web browser:  
+			<img src="svgscreenshot.png" alt="SVG screenshot">
+			<i>(Note: the bottom of the full SVG is cut off due to the size of the image compared to the screensize of my computer.)</i>
+			<br>This concludes my introduction to HTML experience. Thank you for reading!
+		</p>
+	</body>
 </html>
-```
-
-The output of the full code looks like this in a web browser:  
-![SVG Screenshot](svgscreenshot.png)  
-_(Note: the bottom of the full SVG is cut off due to the size of the image.)_  
-
-This concludes my introduction to HTML experience. Thank you for reading!
