@@ -48,4 +48,5 @@ p, h1, h3, h4 {
 th {
     background-color: #746ab0;
     color: white;
+    padding: 5px;
 }
