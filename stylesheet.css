@@ -16,6 +16,7 @@ p, h1, h3, h4 {
     background-color: #DCDCDC;
     margin: 10px;
     text-align: left;
+    max-width: 100vh;
 }
 
 #external-link {
