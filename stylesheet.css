@@ -26,3 +26,14 @@
     max-height: 100vh;
     margin: auto;
 }
+
+#table {
+    width: 75%;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #746ab0;
+}
