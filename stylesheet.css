@@ -1,14 +1,15 @@
 /* this is the CSS file for my final project */
 
-/* code style */
-#code {
-    background-color: #DCDCDC;
-}
 
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
+    margin: 10px;
     padding: 0;
+}
+
+/* code style */
+#code {
+    background-color: #DCDCDC;
 }
 
 #external-link {
@@ -36,4 +37,5 @@
 
 th {
     background-color: #746ab0;
+    color: white;
 }
