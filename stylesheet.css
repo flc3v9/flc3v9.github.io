@@ -17,6 +17,9 @@ p, h1, h3, h4 {
     margin: 10px;
     text-align: left;
     max-width: 100vh;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #external-link {
