@@ -11,7 +11,7 @@ p, h1, h3, h4 {
     margin: 10px;
 }
 
-.edit {
+#edit {
     word-wrap: break-word;
     color: red;
 }
