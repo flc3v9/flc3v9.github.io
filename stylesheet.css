@@ -11,17 +11,17 @@ p, h1, h3, h4 {
     margin: 10px;
 }
 
-#edit {
-    word-wrap: break-word;
-    color: red;
-}
-
 /* code style */
 #code {
     background-color: #DCDCDC;
     margin: 10px;
     text-align: left;
     max-width: 100vh;
+}
+
+.edit {
+    word-wrap: break-word;
+    color: red;
 }
 
 #external-link {
