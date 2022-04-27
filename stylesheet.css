@@ -1,17 +1,23 @@
 /* this is the CSS file for my final project */
 
-
+/* settings for all */
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0px;
     padding: 0;
 }
 
+/* making all paragraph font size bigger */
+p {
+    font-size: 1.1em;
+}
+
+/* adding margins */
 p, h1, h3, h4 {
     margin: 10px;
 }
 
-/* code style */
+/* code styling */
 #code {
     background-color: #DCDCDC;
     margin: 10px;
@@ -19,24 +25,29 @@ p, h1, h3, h4 {
     max-width: 100vh;
 }
 
-.edit {
+/* specific styling for HTML code */
+.html {
     word-wrap: break-word;
     background-color: #DCDCDC;
     margin: 10px;
     text-align: left;
-    max-width: 100vh;
+    max-width: 150vh;
 }
 
+/* specific styling for external links */
 #external-link {
     color: #746ab0;
 }
 
+/* styling for lists */
 #lists {
-    color: royalblue;
+    color: #746ab0;
     margin: 30px;
     list-style-type: square;
+    font-size: 1.1em;
 }
 
+/* make images center and fit on page */
 .images {
     display: grid;
     height: 100%;
@@ -45,14 +56,16 @@ p, h1, h3, h4 {
     margin: auto;
 }
 
+/* table styling */
 #table {
     width: 75%;
     border: 1px solid;
-    padding: 0.5rem;
+    padding: 0.7rem;
     text-align: left;
     margin: 25px;
 }
 
+/* specifics for table headings */
 th {
     background-color: #746ab0;
     color: white;
